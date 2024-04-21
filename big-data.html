@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Página con imagen de fondo fija</title>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet">
+
+   <style>
+      * {
+         font-family: "Nunito Sans";
+         margin: 0;
+      }
+
+      body {
+         margin: 0;
+         padding: 0;
+         background-image: url('src/principales-aplicaciones-del-big-data-1-modified-modified.jpeg');
+         background-size: cover;
+         background-attachment: fixed;
+         /* Esto hace que la imagen de fondo sea fija */
+      }
+      h1{font-size: 3rem;}
+      h3{font-size: 1.5rem;}
+      h3, h1 {
+         color: rgb(255, 132, 0);
+      }
+
+      p,
+      ul {
+         color: rgb(29, 29, 29);
+      }
+      
+      .contenido {}
+
+      .section {
+         margin: 2rem 0px;
+         background-color: rgba(231, 231, 231, 0.9);
+         padding: 1rem;
+         /* color: white; */
+         border-radius: .3rem;
+         
+         box-shadow: #00000037 4px 4px 4px 4px;
+         max-width: 600px;
+      }
+
+      .contenedor {
+         margin-inline: 2rem;
+      }
+      .img{
+         position: relative;
+         background-image: url('src/principales-aplicaciones-del-big-data-1.jpeg');
+         background-size: cover;
+         background-attachment: fixed;
+         height: 150px;
+      }
+      .img h1{
+         left: 5rem;
+         font-weight: bold;
+         position: absolute;
+         margin: 0 auto;
+         top: 50%;
+      }
+      @media only screen and (max-width: 700px) {
+         h1{
+            font-size: 2rem;
+         }
+         .img{
+            
+         }
+         .img h1{
+            top: 2rem;
+            left: 1rem;
+         }
+      }
+      
+   </style>
+</head>
+
+<body>
+
+   <div class="contenido">
+      <section class="img">
+         <!-- <img src="src/recurso_aplicaciones-de-IoT.jpg" alt="" style="width: 100%;"> -->
+         <h1>Big Data <span style="color: white;">¿Que podríamos solucionar con big data?</span></h1>
+      </section>
+      <div class="contenedor">
+         
+         <section class="section">
+            <h3>
+               ¿Qué es?
+            </h3>
+            <p>El <span style="font-weight: bold;">Big Data</span> es un término que se refiere a conjuntos de datos extremadamente grandes y complejos que superan la capacidad de las herramientas de procesamiento de datos tradicionales para gestionarlos y analizarlos de manera efectiva. Estos conjuntos de datos suelen ser de tamaño gigantesco, tanto en volumen como en velocidad y variedad de información.
+               El concepto de big data se caracteriza por las denominadas "3 V": Volumen, Variedad y Velocidad
+            </p>
+         </section>
+         <section class="section">
+            <h3>Beneficios</h3>
+            <ul>
+               <li>El análisis de datos puede ayudar a las empresas a identificar áreas de mejora en sus operaciones y a optimizar procesos para aumentar la eficiencia y reducir costos</li>
+               <li>El análisis de datos puede ayudar a identificar patrones sospechosos o anomalías que puedan indicar actividades fraudulentas, lo que permite a las empresas tomar medidas preventivas.</li>
+               <li>El análisis de datos puede ayudar a las empresas a identificar áreas de mejora en sus operaciones y a optimizar procesos para aumentar la eficiencia y reducir costos</li>
+               <li>El rendimiento de la máquina: ya que a través de la cantidad de datos que recopila puede predecir cuál es la configuración más adecuada para un equipo</li>
+               <li>Optimizar el tiempo para tomar decisiones ya sea en una empresa o en otra entidad por la cantidad de datos que maneja </li>
+               <li>En las pequeñas, medianas y grandes empresas, con los datos recopilados del big data se podría predecir cuántas ventas y ganancias se tendrán para el siguiente mes.</li>
+               <li>En tiendas virtuales promociona productos preferidos al cliente revisando su historial, que clase de productos más consume el cliente</li>
+               <li>Se refiere al proceso de extraer insights en la investigación de mercados con grandes cantidades de datos, para identificar patrones ocultos, conexiones poco exploradas y correlaciones que pueden influir en las personas. Lo que antes podía tomar varios meses , ahora se puede realizar de manera más rápida y con una muestra más confiable</li>
+            </ul>
+         </section>
+         
+      </div>
+   </div>
+
+</body>
+
+</html>

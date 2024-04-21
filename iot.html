@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Página con imagen de fondo fija</title>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet">
+
+   <style>
+      * {
+         font-family: "Nunito Sans";
+         margin: 0;
+      }
+
+      body {
+         margin: 0;
+         padding: 0;
+         background-image: url('src/social-starhub-5g-iot.jpeg');
+         background-size: cover;
+         background-attachment: fixed;
+         /* Esto hace que la imagen de fondo sea fija */
+      }
+      h1{font-size: 3rem;}
+      h3{font-size: 1.5rem;}
+      h3, h1 {
+         color: rgb(255, 132, 0);
+      }
+
+      p,
+      ul {
+         color: rgb(29, 29, 29);
+      }
+      
+      .contenido {}
+
+      .section {
+         margin: 2rem 0px;
+         background-color: rgba(231, 231, 231, 0.9);
+         padding: 1rem;
+         /* color: white; */
+         border-radius: .3rem;
+         
+         box-shadow: #00000037 4px 4px 4px 4px;
+         max-width: 600px;
+      }
+
+      .contenedor {
+         margin-inline: 2rem;
+      }
+      .img{
+         position: relative;
+         background-image: url('src/5g-iot.jpeg');
+         background-size: cover;
+         background-attachment: fixed;
+         height: 150px;
+      }
+      .img h1{
+         left: 5rem;
+         font-weight: bold;
+         position: absolute;
+         margin: 0 auto;
+         top: 50%;
+      }
+      @media only screen and (max-width: 700px) {
+         h1{
+            font-size: 2rem;
+         }
+         .img{
+            
+         }
+         .img h1{
+            top: 2rem;
+            left: 1rem;
+         }
+      }
+      
+   </style>
+</head>
+
+<body>
+
+   <div class="contenido">
+      <section class="img">
+         <!-- <img src="src/recurso_aplicaciones-de-IoT.jpg" alt="" style="width: 100%;"> -->
+         <h1>Internet de las cosas <span style="color: white;">IoT</span></h1>
+      </section>
+      <div class="contenedor">
+         
+         <section class="section">
+            <h3>
+               ¿Qué es?
+            </h3>
+            <p>El internet de las cosas o IoT por sus siglas en inglés Internet of things
+               es el proceso que permite conectar los elementos físicos cotidianos al Internet
+            </p>
+         </section>
+         <section class="section">
+            <h3>Beneficios</h3>
+            <ul>
+               <li>Conexión constante a una red</li>
+               <li>Ejecución de múltiples actividades o tareas de manera rápida y eficiente</li>
+               <li>Acceso a información de todo tipo de todo el mundo conectado a la red</li>
+               <li>Velocidad en la comunicación</li>
+               <li>Ha contribuido a mejorar sustancialmente procesos cotidianos como la posibilidad de comprar por
+                  internet
+               </li>
+               <li>Facilita la comunicación entre dos personas de diferentes lugares</li>
+               <li>Facilita la expansión de negocios a nivel global y el acceso a mercados internacionales</li>
+            </ul>
+         </section>
+         <section class="section">
+            <h3>Desvantajas</h3>
+            <ul>
+               <li>La falta de compatibilidad entre ciertos dispositivos</li>
+               <li>El riesgo de hacking o ciberataques a información compartida entre dispositivos</li>
+               <li>Sobrecarga de información</li>
+               <li>Acceso a información poco fiable y falsa.</li>
+               <li>Compras inducidas por publicidad abusiva.</li>
+               <li>Adicción a frecuentar las Redes Sociales.</li>
+               <li>Aunque facilita la comunicación, también puede contribuir a la desconexión social al fomentar
+                  interacciones superficiales en lugar de relaciones personales significativas.</li>
+               <li>Mal uso de programas o softwares.</li>
+            </ul>
+         </section>
+      </div>
+   </div>
+
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Página con imagen de fondo fija</title>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet">
+
+   <style>
+      * {
+         font-family: "Nunito Sans";
+         margin: 0;
+      }
+
+      body {
+         margin: 0;
+         padding: 0;
+         background-image: url('src/0x0.jpg');
+         background-size: cover;
+         background-attachment: fixed;
+         /* Esto hace que la imagen de fondo sea fija */
+      }
+      h1{font-size: 3rem;}
+      h3{font-size: 1.5rem;}
+      h3, h1 {
+         color: rgb(255, 132, 0);
+      }
+
+      p,
+      ul {
+         color: rgb(29, 29, 29);
+      }
+      
+      .contenido {}
+
+      .section {
+         margin: 2rem 0px;
+         background-color: rgba(231, 231, 231, 0.9);
+         padding: 1rem;
+         /* color: white; */
+         border-radius: .3rem;
+         
+         box-shadow: #00000037 4px 4px 4px 4px;
+         max-width: 600px;
+      }
+
+      .contenedor {
+         margin-inline: 2rem;
+      }
+      .img{
+         position: relative;
+         background-image: url('src/0x0-modified.jpg');
+         background-size: cover;
+         background-attachment: fixed;
+         height: 150px;
+      }
+      .img h1{
+         left: 5rem;
+         font-weight: bold;
+         position: absolute;
+         margin: 0 auto;
+         top: 50%;
+      }
+      @media only screen and (max-width: 700px) {
+         h1{
+            font-size: 2rem;
+         }
+         .img{
+            
+         }
+         .img h1{
+            top: 2rem;
+            left: 1rem;
+         }
+      }
+      
+   </style>
+</head>
+
+<body>
+
+   <div class="contenido">
+      <section class="img">
+         <!-- <img src="src/recurso_aplicaciones-de-IoT.jpg" alt="" style="width: 100%;"> -->
+         <h1 style="text-shadow: #ffffff37 4px 4px 4px;">Servicios en nube <span style="color: white;text-shadow: #00000037 4px 4px 4px;">¿Cuáles son los beneficios que ofrece?</span></h1>
+      </section>
+      <div class="contenedor">
+         
+         <section class="section">
+            <h3>
+               ¿Qué es?
+            </h3>
+            <p>Los servicios en la nube, también conocidos como servicios de computación en la nube, son recursos informáticos que se proporcionan a través de internet bajo demanda. En lugar de tener que adquirir y mantener infraestructura física y software en sus propias instalaciones, las organizaciones pueden utilizar servicios en la nube para acceder a recursos informáticos según sea necesario, pagando solo por lo que utilizan.
+            </p>
+         </section>
+         <section class="section">
+            <h3>Beneficios</h3>
+            <p>Puedes acceder a tus datos desde cualquier lugar con conexión a Internet, lo que facilita el trabajo remoto y la colaboración en equipo.</p>
+            <p>La capacidad de almacenamiento en la nube es virtualmente ilimitada, lo que te permite almacenar grandes cantidades de datos sin preocuparte por quedarte sin espacio.</p>
+            <p>Puedes acceder a tus datos y aplicaciones desde cualquier lugar con conexión a Internet, lo que facilita el trabajo remoto y la colaboración en equipo.</p>
+            <p>La nube facilita la colaboración entre equipos, ya que varios usuarios pueden acceder y editar documentos de forma simultánea, lo que mejora la eficiencia y la productividad.</p>
+            <p>Mantiene segura la información debido a la seguridad y mantenimiento automático que brinda la administración centralizada del servicio.</p>
+            <p>Previene la pérdida de la información eliminada ya que contiene una copia de seguridad</p>
+         </section>
+      </div>
+   </div>
+
+</body>
+
+</html>

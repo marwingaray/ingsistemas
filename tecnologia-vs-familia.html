@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Página con imagen de fondo fija</title>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet">
+
+   <style>
+      * {
+         font-family: "Nunito Sans";
+         margin: 0;
+      }
+
+      body {
+         margin: 0;
+         padding: 0;
+         background-image: url('src/tech\ vs\ family.jpg');
+         background-size: cover;
+         background-attachment: fixed;
+         /* Esto hace que la imagen de fondo sea fija */
+      }
+      h1{font-size: 3rem;}
+      h3{font-size: 1.5rem;}
+      h3, h1 {
+         color: rgb(255, 132, 0);
+      }
+
+      p,
+      ul {
+         color: rgb(29, 29, 29);
+      }
+      
+      .contenido {}
+
+      .section {
+         margin: 2rem 0px;
+         background-color: rgba(231, 231, 231, 0.9);
+         padding: 1rem;
+         /* color: white; */
+         border-radius: .3rem;
+         
+         box-shadow: #00000037 4px 4px 4px 4px;
+         max-width: 600px;
+      }
+
+      .contenedor {
+         margin-inline: 2rem;
+      }
+      .img{
+         position: relative;
+         background-image: url('src/tech\ vs\ family\ 2.jpg');
+         background-size: cover;
+         background-attachment: fixed;
+         height: 150px;
+      }
+      .img h1{
+         left: 5rem;
+         font-weight: bold;
+         position: absolute;
+         margin: 0 auto;
+         top: 50%;
+      }
+      @media only screen and (max-width: 700px) {
+         h1{
+            font-size: 2rem;
+         }
+         .img{
+            
+         }
+         .img h1{
+            top: 2rem;
+            left: 1rem;
+         }
+      }
+      
+   </style>
+</head>
+
+<body>
+
+   <div class="contenido">
+      <section class="img">
+         <!-- <img src="src/recurso_aplicaciones-de-IoT.jpg" alt="" style="width: 100%;"> -->
+         <h1>Tecnologia vs Familia </h1>
+      </section>
+      <div class="contenedor">
+         
+         <section class="section">
+            <p>
+               La tecnología en el hogar ayuda a que todos, de alguna forma, se conecten de maneras diferentes.
+Fomenta la creatividad. diversos artículos y algunas herramientas hacen que logremos generar nuevas ideas.
+Te brinda herramientas para cumplir con tareas domésticas.
+Nos invita a participar en canales virtuales para generar conocimientos en temas nuevos, aprender más y encontrar información relevante en la red.
+            </p>
+         </section>
+         <section class="section">
+            <h3>¿Qué necesitamos?</h3>
+            <ul>
+               <li>Necesitamos buscar ayuda con un profesional si la tecnología está causando problemas significativos dentro de la familia. </li>
+               <li>Necesitamos estar informados acerca de cada tecnología y sus funciones , a la cual nuestros hijos  tendrán acceso.</li>
+               <li>Obtener más información de la seguridad digital evitando</li>
+               <li>Leer noticias en redes sociales con criterios coherentes</li>
+               <li>Utilizar la tecnología como modo de aprendizaje</li>
+               
+            </ul>
+         </section>
+         <section class="section">
+            <h3>¿Qué acciones tomar?</h3>
+            <ul>
+               <li>Dejar el teléfono o las redes en reuniones cenas y/o en presencia de familiares</li>
+               <li>Establecer ciertos límites en el uso de las nuevas tecnologías en niños y adolescentes</li>
+               <li>Enséñales a los niños cómo mantenerse seguros en línea y cómo usar la tecnología de manera responsable.</li>
+               <li>revisar la configuración de acceso a la información</li>
+               <li>establecer espacios libres lejos de pantallas</li>
+            </ul>
+         </section>
+      </div>
+   </div>
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Página con imagen de fondo fija</title>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet">
+
+   <style>
+      * {
+         font-family: "Nunito Sans";
+         margin: 0;
+      }
+
+      body {
+         margin: 0;
+         padding: 0;
+         background-image: url('src/La-Sociedad-del-Conocimiento-aplicada-a-la-Salud.jpg');
+         background-size: cover;
+         background-attachment: fixed;
+         /* Esto hace que la imagen de fondo sea fija */
+      }
+      h1{font-size: 3rem;}
+      h3{font-size: 1.5rem;}
+      h3, h1 {
+         color: rgb(255, 132, 0);
+      }
+
+      p,
+      ul {
+         color: rgb(29, 29, 29);
+      }
+      
+      .contenido {}
+
+      .section {
+         margin: 2rem 0px;
+         background-color: rgba(231, 231, 231, 0.9);
+         padding: 1rem;
+         /* color: white; */
+         border-radius: .3rem;
+         
+         box-shadow: #00000037 4px 4px 4px 4px;
+         max-width: 600px;
+      }
+
+      .contenedor {
+         margin-inline: 2rem;
+      }
+      .img{
+         position: relative;
+         background-image: url('src/La-Sociedad-del-Conocimiento-aplicada-a-la-Salud-modified.jpg');
+         background-size: cover;
+         background-attachment: fixed;
+         height: 150px;
+      }
+      .img h1{
+         left: 5rem;
+         font-weight: bold;
+         position: absolute;
+         margin: 0 auto;
+         top: 50%;
+      }
+      @media only screen and (max-width: 700px) {
+         h1{
+            font-size: 2rem;
+         }
+         .img{
+            
+         }
+         .img h1{
+            top: 2rem;
+            left: 1rem;
+         }
+      }
+      
+   </style>
+</head>
+
+<body>
+
+   <div class="contenido">
+      <section class="img">
+         <!-- <img src="src/recurso_aplicaciones-de-IoT.jpg" alt="" style="width: 100%;"> -->
+         <h1>De una sociedad industrial a una sociedad de conocimientos </h1>
+      </section>
+      <div class="contenedor">
+         <section class="section">
+            <h3 style="color: rgb(255, 132, 0)">¿Cuáles son los elementos más importantes de la era?
+            </h3>
+         </section>
+         <section class="section">
+            <h3>Sociedad Industrial</h3>
+            <p>Es el conjunto de sensores, instrumentos y dispositivos autónomos conectados a través de Internet a aplicaciones industriales. Esta red permite recopilar datos, realizar análisis y optimizar la producción, aumentando la eficiencia y reduciendo los costes del proceso de fabricación y prestación de servicios.</p>
+            <p>Tecnología y producción: Se caracteriza por la mecanización y la producción en masa. La invención de la máquina de vapor, la electricidad y la línea de montaje fueron hitos importantes.</p>
+            <p>Información y comunicación: La comunicación estaba limitada principalmente a medios como el teléfono, el telégrafo y el correo postal. La información se almacenaba en papel y documentos físicos.</p>
+         </section>
+         <section class="section">
+            <h3>Sociedad del Conocimiento</h3>
+            <p>Tecnología y producción: La tecnología de la información y la comunicación (TIC) se convierte en el núcleo de la producción y la economía. Se enfoca en la automatización, la robótica, la inteligencia artificial, el Internet de las cosas (IoT) y la computación en la nube.</p>
+            <p>Información y comunicación: Se produce un cambio hacia la digitalización de la información. Se accede y se comparte a través de internet, redes sociales, bases de datos digitales y servicios en la nube.</p>
+         </section>
+      </div>
+   </div>
+
+</body>
+
+</html>

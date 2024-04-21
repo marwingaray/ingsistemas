@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Página con imagen de fondo fija</title>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet">
+
+   <style>
+      * {
+         font-family: "Nunito Sans";
+         margin: 0;
+      }
+
+      body {
+         margin: 0;
+         padding: 0;
+         background-image: url('src/sistemas-de-informacion.jpg');
+         background-size: cover;
+         background-attachment: fixed;
+         /* Esto hace que la imagen de fondo sea fija */
+      }
+      h1{font-size: 3rem;}
+      h3{font-size: 1.5rem; color: #00aaff;}
+      h3, h1 {
+         color: rgb(255, 132, 0);
+      }
+
+      p,
+      ul {
+         color: rgb(29, 29, 29);
+      }
+      
+      .contenido {}
+
+      .section {
+         margin: 2rem 0px;
+         background-color: rgba(231, 231, 231, 0.9);
+         padding: 1rem;
+         /* color: white; */
+         border-radius: .3rem;
+         
+         box-shadow: #00000037 4px 4px 4px 4px;
+         max-width: 600px;
+      }
+
+      .contenedor {
+         margin-inline: 2rem;
+      }
+      .img{
+         position: relative;
+         background-image: url('src/5g-iot.jpeg');
+         background-size: cover;
+         background-attachment: fixed;
+         height: 150px;
+      }
+      .img h1{
+         left: 5rem;
+         font-weight: bold;
+         position: absolute;
+         margin: 0 auto;
+         top: 50%;
+      }
+      .contenido{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         flex-flow: column;
+         align-items: center;
+      }
+      @media only screen and (max-width: 700px) {
+         h1{
+            font-size: 2rem;
+         }
+         .img{
+            
+         }
+         .img h1{
+            top: 2rem;
+            left: 1rem;
+         }
+      }
+      
+   </style>
+</head>
+
+<body>
+
+   <div class="contenido">
+      <section class="section">
+         <p>
+            <a href="iot.html"><h3>Internet de las cosas</h3></a>
+         </p>
+      </section>
+      <section class="section">
+         <p>
+            <a href="de-sociedad-industrial-a-sociedad-conocimiento.html"><h3>De una sociedad industrial a una sociedad de</h3></a>
+         </p>
+      </section>
+      <section class="section">
+         <p>
+            <a href="big-data.html"><h3>Big Data</h3></a>
+         </p>
+      </section>
+      <section class="section">
+         <p>
+            <a href="servicios-en-nube.html"><h3>Servicios en nube</h3></a>
+         </p>
+      </section>
+      <section class="section">
+         <p>
+            <a href="tecnologia-vs-familia.html"><h3>Tecnologia versus familia</h3></a>
+         </p>
+      </section>
+
+      
+   </div>
+
+</body>
+
+</html>
